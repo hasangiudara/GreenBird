@@ -8,7 +8,7 @@ Follow the below steps to write content using Markdown in Visual Studio Code.
 
 #### Step 1: Install Visual Studio Code
 1. Go to the following [link](https://code.visualstudio.com/).
-2. Click on the **download** button. The download button is in Blue, according to your operating system it would say *Download for Windows or macOS or Linux* ![](). 
+2. Click on the **download** button. The download button is in Blue, according to your operating system it would say *Download for Windows or macOS or Linux* ![SS](). 
 3. The installation would take about a minute.
 #### Step 2: Install Markdown Exention 
 1. Open the visual studio application.
