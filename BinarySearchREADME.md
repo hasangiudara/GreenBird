@@ -28,16 +28,16 @@ The binarySearch method has two parameters. **int[] array**, is the sorted array
 
 **int left** sets the left pointer to '0' and **int right** calculates the last index of the array.
 
-Using the **while loop**, it runs until the array space until it is fully searched. The loop continues as long as the left pointer is less than or equal to the right pointer. 
+Using the **while loop**, it runs until the array space is fully searched. The loop continues as long as the left pointer is less than or equal to the right pointer. 
 
-**int mid** is created to calculate the middle value of the array. The array space is divided in half to locate the target element. While the loop runs until one of the conditions is met. 
+**int mid** is created to calculate the middle index of the array. The array space is divided in half to locate the target element. While the loop runs until one of the conditions is met. The middle index determines which half of the array to search.
 
 Using the **if condition** it checks the three conditions. 
 1. If the value at the middle index is equal to the target value, it returns an index of the middle value. 
 
-2. If the value at the middle index is smaller than the target value it searches the right side. Then **if(array[mid] < target)** is executed. To search the right half of the array, the left pointer needs to be updated. So ***mid + 1***. This moves the left pointer one position to the right of the middle index, and then the left half of the array is discarded because all elements in the left half of the array are smaller than the **target**.
+2. If the value at the middle index is smaller than the **target**, it searches the right side. Then **if(array[mid] < target)** is executed. To search the right half of the array, the left pointer needs to be updated. So ***mid + 1***. This moves the left pointer one position to the right of the middle index, and then the left half of the array is discarded because all elements in the left half of the array are smaller than the **target**.
 
-3. If the value at the middle index is bigger than the target value it searches the left side of the array. Then **else** is executed. To search the left half of the array, we need to update the right pointer to ***mid - 1***. This moves the right pointer one position to the left of the middle index and discards the right half of the array because all elements in the right half are greater than the **target**.
+3. If the value at the middle index is bigger than the **target** it searches the left side of the array. Then **else** is executed. To search the left half of the array, we need to update the right pointer to ***mid - 1***. This moves the right pointer one position to the left of the middle index and discards the right half of the array because all elements in the right half are greater than the **target**.
 
 4. It will return -1 to indicate that the **target** is not in the array.
 
@@ -58,9 +58,9 @@ public static void main(String[] args) {
     }
 ```
 **int[] array**, is the array in ascending order.
-**int target = 17**, 17 is the number we are looking for in the array. 
+**int target = 17**, 17 is the value we are looking for in the array. 
 
-**binarySearch** is the method that was defined earlier. It performs the Binary Search to find the **target** in **array**. Here, variables **int [] array** & **int target** are passed.
+**binarySearch** is the method that was defined earlier. It performs the Binary Search to find the **target** in the **array**. Here, variables **int [] array** & **int target** are passed.
 
 **int result** is the name of the variable where we store the result of the binary search and contains the index where it is located in the array.
 
