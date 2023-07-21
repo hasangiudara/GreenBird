@@ -24,7 +24,7 @@ public static int binarySearch(int[] array, int target) {
         return -1; 
     }
 ```
-The binarySearch method has two parameters. **int[] array**, is the sorted array that will be searched. **int target** is the number that we are looking for.
+The binarySearch method has two parameters. **int[] array**, is the sorted array that will be searched. **int target** is the value that we are looking for.
 
 **int left** sets the left pointer to '0' and **int right** calculates the last index of the array.
 
